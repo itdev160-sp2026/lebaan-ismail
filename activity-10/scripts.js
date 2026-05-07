@@ -50,7 +50,7 @@ function makeMove(index) {
   } else if (gameState.board.every((cell) => cell !== "")) {
     console.log("Game over! It's a draw.");
   } else {
-    gameState.currentPlayer = gameState.currentPlayer === "X" ? "0" : "X";
+    gameState.currentPlayer = gameState.currentPlayer === "X" ? "O" : "X";
   }
 
   updateBoard();
